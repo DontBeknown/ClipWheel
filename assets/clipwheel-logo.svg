@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="ClipWheel logo">
+<rect x="16" y="16" width="480" height="480" rx="112" fill="#1e1e2e"/>
+<path d="M202.231,90.516 A174,174 0 0 1 309.769,90.516" fill="none" stroke="#b4befe" stroke-width="20" stroke-linecap="round"/>
+<path d="M334.994,100.965 A174,174 0 0 1 411.035,177.006" fill="none" stroke="#b4befe" stroke-width="20" stroke-linecap="round"/>
+<path d="M421.484,202.231 A174,174 0 0 1 421.484,309.769" fill="none" stroke="#b4befe" stroke-width="20" stroke-linecap="round"/>
+<path d="M411.035,334.994 A174,174 0 0 1 334.994,411.035" fill="none" stroke="#585b70" stroke-width="20" stroke-linecap="round"/>
+<path d="M309.769,421.484 A174,174 0 0 1 202.231,421.484" fill="none" stroke="#585b70" stroke-width="20" stroke-linecap="round"/>
+<path d="M177.006,411.035 A174,174 0 0 1 100.965,334.994" fill="none" stroke="#585b70" stroke-width="20" stroke-linecap="round"/>
+<path d="M90.516,309.769 A174,174 0 0 1 90.516,202.231" fill="none" stroke="#585b70" stroke-width="20" stroke-linecap="round"/>
+<path d="M100.965,177.006 A174,174 0 0 1 177.006,100.965" fill="none" stroke="#585b70" stroke-width="20" stroke-linecap="round"/>
+<rect x="185" y="175" width="142" height="184" rx="22" fill="#1e1e2e" stroke="#cdd6f4" stroke-width="18"/>
+<rect x="221" y="153" width="70" height="42" rx="12" fill="#1e1e2e" stroke="#b4befe" stroke-width="16"/>
+<path d="M219 242h74 M219 280h74 M219 318h46" fill="none" stroke="#cdd6f4" stroke-width="14" stroke-linecap="round"/>
+</svg>

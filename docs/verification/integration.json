@@ -1,0 +1,10 @@
+{
+    "MissingFile":  "rejected",
+    "ClipboardRestored":  true,
+    "NativeClipboardRoundTrips":  "passed",
+    "Formats":  [
+                    "Unicode text",
+                    "DIBV5 with alpha",
+                    "File references"
+                ]
+}

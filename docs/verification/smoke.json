@@ -1,0 +1,10 @@
+{
+  "Alive": true,
+  "HiddenAfterEscape": true,
+  "IdleCpuPercent": 0.0,
+  "WorkingSetMiB": 63.43,
+  "PrivateMiB": 46.21,
+  "WarmOpenP95Ms": 22.92,
+  "WorkingSetAfter20CyclesMiB": 63.53,
+  "AnimationMedianIntervalMs": 15.44
+}
