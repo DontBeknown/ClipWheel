@@ -80,7 +80,9 @@ try {
  Post 0x0111 104 0;Pump 200
  Assert ($process.HasExited) 'Quit failed'
  $results.Quit=$true
- $results | ConvertTo-Json | Set-Content "$PSScriptRoot/../docs/verification/integration.json"
+ $directory = Join-Path $PSScriptRoot '../target/verification'
+ New-Item -ItemType Directory -Force $directory | Out-Null
+ $results | ConvertTo-Json | Set-Content (Join-Path $directory 'integration.json')
  [pscustomobject]$results
 } finally {
  if($hwnd-ne[IntPtr]::Zero){[void][IntegrationProbe]::PostMessage($hwnd,0x0111,[IntPtr]104,[IntPtr]::Zero)}

@@ -51,4 +51,4 @@ On a clean developer machine, install stable Rust with the MSVC target and Visua
 - `scripts/paste-check.ps1`: optional foreground-window test for automatic paste. Stops if Windows will not activate its test field, rather than typing into another app.
 - `clipwheel.exe --demo`: opens sample text history with capture paused. Selecting a demo entry still restores/pastes it; use Escape to dismiss without changing the clipboard.
 
-Measurements and remaining manual checks are in `docs/verification/RESULTS.md`. The memory limit applies to retained clipboard payloads/previews, not total process memory, graphics resources, or transient clipboard conversions.
+Verification scripts write reports and captures to `target/verification/`. The memory limit applies to retained clipboard payloads/previews, not total process memory, graphics resources, or transient clipboard conversions.

@@ -1,7 +1,7 @@
 from pathlib import Path
 from PIL import Image, ImageDraw
 import numpy as np
-folder=Path('docs/verification/glass')
+folder=Path('target/verification/glass')
 for p in folder.glob('*.bgra'):
     w,h=map(int,p.stem.split('-')[-1].split('x'))
     a=np.frombuffer(p.read_bytes(),dtype=np.uint8).reshape(h,w,4).copy()

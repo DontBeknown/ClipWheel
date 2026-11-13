@@ -14,9 +14,6 @@ $assetDestination=Join-Path $destination 'assets'
 New-Item -ItemType Directory -Force $assetDestination | Out-Null
 Get-ChildItem "$root/assets" -File | Copy-Item -Destination $assetDestination -Force
 Copy-Item "$root/THIRD-PARTY-NOTICES.md" $destination
-$verification=Join-Path $destination 'docs/verification'
-New-Item -ItemType Directory -Force $verification | Out-Null
-Copy-Item "$root/docs/verification/RESULTS.md","$root/docs/verification/smoke.json","$root/docs/verification/integration.json" $verification
 $licenses=Join-Path $destination 'licenses'
 New-Item -ItemType Directory -Force $licenses | Out-Null
 Get-ChildItem "$root/.tools/cargo/registry/src" -Directory | ForEach-Object {Get-ChildItem -LiteralPath $_.FullName -Directory} | ForEach-Object {

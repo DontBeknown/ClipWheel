@@ -31,7 +31,7 @@ $probeX = if ($pointer.X -gt ($work.Left + $work.Width/2)) { $work.Left } else {
 $probeY = if ($pointer.Y -gt ($work.Top + $work.Height/2)) { $work.Top } else { $work.Bottom - ($rect.Bottom-$rect.Top) }
 [void][WheelProbe]::SetWindowPos($hwnd,[IntPtr]::Zero,$probeX,$probeY,0,0,0x15)
 [void][WheelProbe]::GetWindowRect($hwnd, [ref]$rect)
-$directory = Join-Path $PSScriptRoot '../docs/verification'
+$directory = Join-Path $PSScriptRoot '../target/verification'
 New-Item -ItemType Directory -Force $directory | Out-Null
 function Save-Crop([string]$Name) {
  $bitmap = New-Object Drawing.Bitmap ($rect.Right-$rect.Left),($rect.Bottom-$rect.Top)

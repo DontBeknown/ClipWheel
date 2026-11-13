@@ -851,7 +851,7 @@ mod compact_tests {
                 None,
             )
             .unwrap();
-            let folder = std::path::Path::new("docs/verification/compact");
+            let folder = std::path::Path::new("target/verification/compact");
             std::fs::create_dir_all(folder).unwrap();
             for scale in [1., 1.5, 2.] {
                 let mut renderer = Renderer::new(hwnd, scale).unwrap();

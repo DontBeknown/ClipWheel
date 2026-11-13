@@ -17,5 +17,7 @@ try {
     if($existing){[Windows.Forms.Clipboard]::SetDataObject($backup,$true)}else{[Windows.Forms.Clipboard]::Clear()}
 }
 if($code-ne0){throw "Native clipboard test failed (exit $code)"}
+$directory = Join-Path $PSScriptRoot '../target/verification'
+New-Item -ItemType Directory -Force $directory | Out-Null
 @{NativeClipboardRoundTrips='passed';Formats=@('Unicode text','DIBV5 with alpha','File references');MissingFile='rejected';ClipboardRestored=$true} |
-    ConvertTo-Json | Set-Content "$PSScriptRoot/../docs/verification/integration.json"
+    ConvertTo-Json | Set-Content (Join-Path $directory 'integration.json')
